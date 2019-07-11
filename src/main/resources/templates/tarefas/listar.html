@@ -10,7 +10,10 @@
 	<div class="container">
 		<h3>Listagem de Tarefas</h3>
 
-		<div th:each="tarefa: ${tarefas}">
+		<a href="/tarefas/inserir" class="btn btn-success">Inserir Nova
+			Tarefa</a>
+
+		<div th:each="tarefa: ${tarefas}" style="margin: 10px;">
 			<div class="car bg-light mb-3">
 				<div class="card-header" th:text="${tarefa.titulo}"></div>
 				<div class="card-body">
@@ -21,7 +24,7 @@
 			</div>
 		</div>
 	</div>
-		<script src="/webjars/jquery/3.4.1/jquery.min.js"></script>
+	<script src="/webjars/jquery/3.4.1/jquery.min.js"></script>
 	<script src="/webjars/bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
